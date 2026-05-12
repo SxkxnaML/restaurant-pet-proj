@@ -1,0 +1,107 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+  gap: 40px;
+  min-height: calc(100vh - 100px);
+}
+
+/* left content */
+/*  */
+
+.restaurantBadge {
+  display: inline-block;
+  background: rgba(255, 138, 0, 0.2);
+  color: #ff8a00;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 6px 25px;
+  border-radius: 50px;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 80px;
+  font-weight: 700;
+  max-width: min-content;
+  color: #311f09;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 500px;
+  line-height: 2;
+  color: #5c4529;
+  margin-bottom: 50px;
+}
+
+.buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.orderBtn {
+  background: #ff8a00;
+  color: #ffffff;
+  border: none;
+  padding: 18px 50px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.reservationBtn {
+  background: #3fa72f;
+  color: #ffffff;
+  border: none;
+  padding: 18px 50px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* right content */
+
+.imageContainer {
+  position: relative;
+  width: 520px;
+  height: 520px;
+  flex-shrink: 0;
+}
+
+.pastaImg {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.12),
+    0 60px 90px rgba(0, 0, 0, 0.18);
+  z-index: 2;
+  object-fit: cover;
+}
+
+.salad {
+  position: absolute;
+  top: -65px;
+  right: 360px;
+  width: 203px;
+  z-index: 1;
+  transform: rotate(3.39deg);
+}
+
+.salad2 {
+  position: absolute;
+  top: 350px;
+  right: -40px;
+  width: 203px;
+  z-index: 1;
+  transform: rotate(150deg);
+}
