@@ -1,4 +1,7 @@
 .main {
-    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 30px;
     height: 100%;
 }
