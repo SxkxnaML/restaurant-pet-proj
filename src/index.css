@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+    --font-poppins: "Poppins", system-ui, -apple-system, sans-serif;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
