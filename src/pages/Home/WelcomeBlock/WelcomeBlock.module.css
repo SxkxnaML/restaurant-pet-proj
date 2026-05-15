@@ -1,0 +1,47 @@
+.container {
+  background: #f3fff8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  padding: 150px;
+  gap: 110px;
+}
+
+.saladImage {
+  width: 500px;
+}
+
+.title {
+  font-size: 80px;
+  font-weight: 700;
+  font-family: var(--font-tinos);
+  color: #ff8a00;
+}
+
+.title::before {
+  content: 'Welcome to';
+  position: absolute;
+  color: #222;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 400;
+  color: #5c4529;
+  max-width: 500px;
+  margin: 30px 0;
+  font-family: var(--font-poppins);
+}
+
+.button {
+  background: #ff8a00;
+  color: #ffffff;
+  border: none;
+  padding: 18px 50px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-poppins);
+}
