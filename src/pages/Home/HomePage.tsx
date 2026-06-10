@@ -4,7 +4,6 @@ import WelcomeBlock from './WelcomeBlock/WelcomeBlock'
 export default function HomePage() {
   return (
     <div className={styles.page}>
-      {' '}
       <div className={styles.hero}>
         <div className={styles.content}>
           <p className={styles.restaurantBadge}> Restaurant </p>
@@ -22,17 +21,17 @@ export default function HomePage() {
           <img
             className={styles.pastaImg}
             src="./img/pasta.png"
-            alt="pasta.png"
+            alt="pasta-image"
           />
           <img
             className={styles.lettuce}
             src="./img/lettuce.png"
-            alt="salad.png"
+            alt="lettuce-image"
           />
           <img
             className={styles.lettuce2}
             src="./img/lettuce.png"
-            alt="salad.png"
+            alt="lettuce-image"
           />
         </div>
       </div>

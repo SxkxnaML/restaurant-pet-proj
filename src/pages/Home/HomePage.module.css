@@ -12,7 +12,7 @@
 .restaurantBadge {
   display: inline-block;
   background: rgba(255, 138, 0, 0.2);
-  color: #ff8a00;
+  color: var(--primary-color);
   font-size: 18px;
   font-weight: 400;
   padding: 6px 25px;
@@ -25,7 +25,7 @@
   font-size: 80px;
   font-weight: 700;
   max-width: min-content;
-  color: #311f09;
+  color: var(--text);
   line-height: 1.1;
   margin-bottom: 25px;
   font-family: var(--font-raleway);
@@ -36,7 +36,7 @@
   font-weight: 400;
   max-width: 500px;
   line-height: 2;
-  color: #5c4529;
+  color: var(--side-text);
   margin-bottom: 50px;
   font-family: var(--font-poppins);
 }
@@ -47,7 +47,7 @@
 }
 
 .orderBtn {
-  background: #ff8a00;
+  background: var(--primary-color);
   color: #ffffff;
   border: none;
   padding: 18px 50px;
