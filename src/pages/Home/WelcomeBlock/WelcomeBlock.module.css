@@ -16,26 +16,26 @@
   font-size: 80px;
   font-weight: 700;
   font-family: var(--font-tinos);
-  color: var(--primary-color);
+  color: var(--primary);
 }
 
 .title::before {
   content: 'Welcome to';
   position: absolute;
-  color: var(--text);
+  color: var(--text-100);
 }
 
 .text {
   font-size: 20px;
   font-weight: 400;
-  color: var(--side-text);
+  color: var(--text-200);
   max-width: 500px;
   margin: 30px 0;
   font-family: var(--font-poppins);
 }
 
 .button {
-  background: var(--primary-color);
+  background: var(--primary);
   color: #ffffff;
   border: none;
   padding: 18px 50px;
