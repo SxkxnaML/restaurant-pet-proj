@@ -3,7 +3,6 @@ import styles from './WelcomeBlock.module.css'
 export default function WelcomeBlock() {
   return (
     <div className={styles.container}>
-      <div className={styles.imageWrapper}></div>
       <img
         className={styles.saladImage}
         src="./img/salad.png"
