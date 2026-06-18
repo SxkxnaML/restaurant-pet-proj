@@ -1,0 +1,12 @@
+:root {
+  /* Primary */
+  --primary: #ff8a00;
+  /* Text */
+  --text-100: #311f09;
+  --text-200: #5c4529;
+  /* Accent */
+  --accent: #3fa72f;
+  /* Background */
+  --background-100: #ffffff;
+  --background-200: #d0ccc7;
+}
