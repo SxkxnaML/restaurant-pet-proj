@@ -1,0 +1,107 @@
+.title {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 700;
+  margin: 40px 0 30px;
+  color: var(--text-100);
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+.categoryBtn {
+  padding: 12px 28px;
+  border: none;
+  background-color: rgba(208, 204, 199, 0.1);
+  color: var(--text-100);
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.categoryBtn.active {
+  background-color: #311f09;
+  color: white;
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.menuCard {
+  background: rgba(208, 204, 199, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.menuCard img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.menuCardContent {
+  padding: 20px;
+}
+
+.menuCard h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 0 8px;
+  color: var(--text-100);
+}
+
+.stars {
+  color: var(--primary);
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.starIcon {
+  cursor: pointer;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-300);
+  line-height: 200%;
+  margin-bottom: 20px;
+}
+
+.priceOrderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.price {
+  font-size: 25px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.orderBtn {
+  background: var(--primary);
+  color: #ffffff;
+  border: none;
+  padding: 18px 50px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-poppins);
+}
