@@ -12,6 +12,8 @@ type MenuItem = {
   image: string
 }
 
+const ITEMS_PER_PAGE = 5
+
 const MENU_CATEGORIES = [
   { name: 'All category' },
   { name: 'Dinner' },
@@ -21,14 +23,13 @@ const MENU_CATEGORIES = [
 ]
 
 export default function PopularMenuSection() {
-  const [page, setPage] = useState(1)
   const [loading, setLoading] = useState(true)
   const [popularMenuCollections, setPopularMenuCollections] = useState<
     MenuItem[]
   >([])
 
   const [ratings, setRatings] = useState<Record<number, number>>({})
-
+  const [page, setPage] = useState(1)
   const [hoverRatings, setHoverRatings] = useState<Record<number, number>>({})
   const [activeCategory, setActiveCategory] = useState('All category')
 
@@ -37,7 +38,7 @@ export default function PopularMenuSection() {
       setLoading(true)
       try {
         const response = await axios.get(
-          `https://6a33d0a38248ee962fa476c9.mockapi.io/ItalianPopularFood?page=${page}&limit=5`,
+          `https://6a33d0a38248ee962fa476c9.mockapi.io/ItalianPopularFood?`,
         )
         setPopularMenuCollections(response.data)
       } catch (err) {
@@ -48,14 +49,23 @@ export default function PopularMenuSection() {
       }
     }
     fetchData()
-  }, [page])
+  }, [])
 
-  const totalPages = 3
+  useEffect(() => {
+    setPage(1)
+  }, [activeCategory])
 
   const filteredMenuCollections = popularMenuCollections.filter((item) => {
     if (activeCategory === 'All category') return true
     return item.category.includes(activeCategory.toLowerCase())
   })
+
+  const displayedItems = filteredMenuCollections.slice(
+    (page - 1) * ITEMS_PER_PAGE,
+    page * ITEMS_PER_PAGE,
+  )
+
+  const totalPages = Math.ceil(filteredMenuCollections.length / ITEMS_PER_PAGE)
 
   const handleRate = (id: number, rating: number) => {
     setRatings({ ...ratings, [id]: rating })
@@ -87,7 +97,7 @@ export default function PopularMenuSection() {
         'Идет загрузка...'
       ) : (
         <div className={styles.menuGrid}>
-          {filteredMenuCollections.map((obj) => (
+          {displayedItems.map((obj) => (
             <div key={obj.id} className={styles.menuCard}>
               <img src={obj.image} alt="popular-food-image" />
               <div className={styles.menuCardContent}>
@@ -130,7 +140,7 @@ export default function PopularMenuSection() {
           ))}
         </div>
       )}
-      <Pagination setPage={setPage} page={page} totalPages={totalPages} />
+      <Pagination page={page} totalPages={totalPages} setPage={setPage} />
     </>
   )
 }

@@ -14,11 +14,16 @@ export default function Pagination({
   totalPages,
 }: PaginationProps) {
   const handlePrev = () => {
-    setPage((prev) => Math.max(1, prev - 1))
+    if (page > 1) {
+      setPage((prev) => prev - 1)
+    }
   }
 
   const handleNext = () => {
-    setPage((prev) => Math.min(totalPages, prev + 1))
+    setPage((prev) => prev + 1)
+    if (page === totalPages) {
+      setPage(totalPages)
+    }
   }
 
   return (
@@ -26,11 +31,13 @@ export default function Pagination({
       <li className={styles.arrow} onClick={handlePrev}>
         <MdArrowBackIosNew />
       </li>
-      {[...Array(3)].map((_, i) => (
-        <li className={styles.number} onClick={() => setPage(i + 1)}>
-          {i + 1}
+
+      {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+        <li key={page} className={styles.number} onClick={() => setPage(page)}>
+          {page}
         </li>
       ))}
+
       <li className={styles.dots}>...</li>
       <li className={styles.arrow} onClick={handleNext}>
         <MdArrowForwardIos />
