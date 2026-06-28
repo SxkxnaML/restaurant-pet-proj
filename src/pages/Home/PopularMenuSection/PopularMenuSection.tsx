@@ -12,25 +12,22 @@ type MenuItem = {
   image: string
 }
 
-export default function PopularMenuSection() {
-  const cats = [
-    { name: 'All category' },
-    { name: 'Dinner' },
-    { name: 'Lunch' },
-    { name: 'Dessert' },
-    { name: 'Drink' },
-  ]
+const MENU_CATEGORIES = [
+  { name: 'All category' },
+  { name: 'Dinner' },
+  { name: 'Lunch' },
+  { name: 'Dessert' },
+  { name: 'Drink' },
+]
 
+export default function PopularMenuSection() {
   const [page, setPage] = useState(1)
   const [loading, setLoading] = useState(true)
   const [popularMenuCollections, setPopularMenuCollections] = useState<
     MenuItem[]
   >([])
 
-  const [ratings, setRatings] = useState<Record<number, number>>(() => {
-    const saved = localStorage.getItem('menuRatings')
-    return saved ? JSON.parse(saved) : {}
-  })
+  const [ratings, setRatings] = useState<Record<number, number>>({})
 
   const [hoverRatings, setHoverRatings] = useState<Record<number, number>>({})
   const [activeCategory, setActiveCategory] = useState('All category')
@@ -61,10 +58,7 @@ export default function PopularMenuSection() {
   })
 
   const handleRate = (id: number, rating: number) => {
-    const newRatings = { ...ratings, [id]: rating }
-    setRatings(newRatings)
-
-    localStorage.setItem('menuRatings', JSON.stringify(newRatings))
+    setRatings({ ...ratings, [id]: rating })
   }
 
   const handleMouseEnter = (id: number, rating: number) => {
@@ -79,7 +73,7 @@ export default function PopularMenuSection() {
     <>
       <h2 className={styles.title}> Our popular menu </h2>
       <div className={styles.category}>
-        {cats.map((obj) => (
+        {MENU_CATEGORIES.map((obj) => (
           <button
             key={obj.name}
             className={`${styles.categoryBtn} ${activeCategory === obj.name ? styles.active : ''}`}
@@ -140,5 +134,3 @@ export default function PopularMenuSection() {
     </>
   )
 }
-
-// сделать рабочую пагинацию
