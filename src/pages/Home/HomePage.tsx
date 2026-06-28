@@ -1,5 +1,6 @@
 import styles from './HomePage.module.css'
 import PopularMenuSection from './PopularMenuSection/PopularMenuSection'
+import ReserveTableSection from './ReserveTableSection/ReserveTableSection'
 import WelcomeSection from './WelcomeSection/WelcomeSection'
 
 export default function HomePage() {
@@ -38,6 +39,7 @@ export default function HomePage() {
       </div>
       <WelcomeSection />
       <PopularMenuSection />
+      <ReserveTableSection />
     </div>
   )
 }
