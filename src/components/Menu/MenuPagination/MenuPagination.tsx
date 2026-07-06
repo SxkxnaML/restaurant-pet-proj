@@ -37,8 +37,6 @@ export default function MenuPagination({
           {page}
         </li>
       ))}
-
-      <li className={styles.dots}>...</li>
       <li className={styles.arrow} onClick={handleNext}>
         <MdArrowForwardIos />
       </li>
