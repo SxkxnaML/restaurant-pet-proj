@@ -1,5 +1,6 @@
 import styles from './HomePage.module.css'
-import WelcomeBlock from './WelcomeBlock/WelcomeBlock'
+import PopularMenuSection from './PopularMenuSection/PopularMenuSection'
+import WelcomeSection from './WelcomeSection/WelcomeSection'
 
 export default function HomePage() {
   return (
@@ -35,7 +36,8 @@ export default function HomePage() {
           />
         </div>
       </div>
-      <WelcomeBlock />
+      <WelcomeSection />
+      <PopularMenuSection />
     </div>
   )
 }

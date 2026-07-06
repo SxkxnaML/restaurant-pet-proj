@@ -1,6 +1,6 @@
-import styles from './WelcomeBlock.module.css'
+import styles from './WelcomeSection.module.css'
 
-export default function WelcomeBlock() {
+export default function WelcomeSection() {
   return (
     <div className={styles.container}>
       <img
