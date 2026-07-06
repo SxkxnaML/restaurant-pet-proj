@@ -2,7 +2,7 @@ import styles from './ReserveTableSection.module.css'
 
 export default function ReserveTableSection() {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.content}>
         <div className={styles.imagesContainer}>
           <div className={styles.mainCircle}>
@@ -15,14 +15,14 @@ export default function ReserveTableSection() {
           <div className={styles.topSmallCircle}>
             <img
               src="img/small-food-table.jpg"
-              alt="small-table-in-restaraunt.jpg"
+              alt="small-table-in-restaraunt"
               className={styles.smallImage}
             />
           </div>
           <div className={styles.bottomSmallCircle}>
             <img
               src="img/restaraunt-table.jpg"
-              alt="table-in-restaraunt.jpg"
+              alt="table-in-restaraunt"
               className={styles.smallImage}
             />
           </div>
@@ -40,6 +40,6 @@ export default function ReserveTableSection() {
           <button className={styles.reservationBtn}>Reservation</button>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
