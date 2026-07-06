@@ -1,18 +1,18 @@
 import { MdArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md'
-import styles from './Pagination.module.css'
+import styles from './MenuPagination.module.css'
 import type { Dispatch, SetStateAction } from 'react'
 
-interface PaginationProps {
+interface MenuPaginationProps {
   setPage: Dispatch<SetStateAction<number>>
   page: number
   totalPages: number
 }
 
-export default function Pagination({
+export default function MenuPagination({
   setPage,
   page,
   totalPages,
-}: PaginationProps) {
+}: MenuPaginationProps) {
   const handlePrev = () => {
     if (page > 1) {
       setPage((prev) => prev - 1)
