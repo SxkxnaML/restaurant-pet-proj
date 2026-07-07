@@ -1,7 +1,160 @@
 .footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    margin-top: auto;
+  background-color: var(--footer-background);
+  padding: 60px 60px 30px;
+  font-family: inherit;
+}
+
+.topRow {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.brandColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoCircle {
+  width: 51px;
+  height: 51px;
+  font-size: 25px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-poppins);
+}
+
+.brandName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  font-family: var(--font-poppins);
+}
+
+.accent {
+  color: var(--primary);
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 200%;
+  color: #e3e2e0;
+  letter-spacing: 0%;
+  margin: 0;
+  max-width: 352px;
+  font-family: var(--font-poppins);
+}
+
+.socials {
+  display: flex;
+  gap: 17px;
+}
+
+.socialIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #e3e2e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialIcon img {
+  width: 30px;
+  height: 30px;
+}
+
+.linkColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.columnTitle {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 25px;
+  margin: 0 0 20px;
+  font-family: var(--font-poppins);
+}
+
+.linkList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.linkList li a {
+  color: #e3e2e0;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: var(--font-poppins);
+  transition: color 0.2s ease;
+}
+
+.linkList li a:hover {
+  color: var(--primary);
+}
+
+.contactList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #e3e2e0;
+}
+
+.address {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--font-poppins);
+}
+.contactList a {
+  color: #e3e2e0;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-family: var(--font-poppins);
+}
+
+.contactList a:hover {
+  color: var(--primary);
+}
+
+.bottomRow {
+  padding-top: 24px;
+}
+
+.copyright {
+  font-size: 20px;
+  font-weight: 400;
+  color: #e3e2e0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-family: var(--font-poppins);
 }
