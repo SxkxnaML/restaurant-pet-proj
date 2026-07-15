@@ -19,7 +19,7 @@
 .logoCircle {
   width: 51px;
   height: 51px;
-  background: #ff8a00;
+  background: var(--primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -32,7 +32,7 @@
 .brandName {
   font-size: 16px;
   font-weight: 600;
-  color: #ff8a00;
+  color: var(--primary)
 }
 
 .brandName::before {
@@ -59,7 +59,7 @@
 }
 
 .navLink:hover {
-  color: #ff8a00;
+  color: var(--primary)
 }
 
 /* 
