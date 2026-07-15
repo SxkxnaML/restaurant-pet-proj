@@ -1,3 +1,4 @@
+import GreatestChefSection from './GreatestChefSection/GreatestChefSection'
 import styles from './HomePage.module.css'
 import PopularMenuSection from './PopularMenuSection/PopularMenuSection'
 import ReserveTableSection from './ReserveTableSection/ReserveTableSection'
@@ -40,6 +41,7 @@ export default function HomePage() {
       <WelcomeSection />
       <PopularMenuSection />
       <ReserveTableSection />
+      <GreatestChefSection />
     </div>
   )
 }
