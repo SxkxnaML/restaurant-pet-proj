@@ -19,15 +19,15 @@ export default function Footer() {
           </p>
 
           <div className={styles.socials}>
-            <div className={styles.socialIcon}>
+            <a className={styles.socialIcon} href="https://x.com/">
               <img src="img/twitter.png" alt="twitter-logo" />
-            </div>
-            <div className={styles.socialIcon}>
+            </a>
+            <a className={styles.socialIcon} href="https://www.instagram.com/">
               <img src="img/instagram.png" alt="instagram-logo" />
-            </div>
-            <div className={styles.socialIcon}>
+            </a>
+            <a className={styles.socialIcon} href="https://www.facebook.com/">
               <img src="img/facebook.png" alt="facebook-logo" />
-            </div>
+            </a>
           </div>
         </div>
 
@@ -70,7 +70,9 @@ export default function Footer() {
         <div className={styles.linkColumn}>
           <p className={styles.columnTitle}>Get in touch</p>
           <ul className={styles.contactList}>
-            <li className={styles.address}>3247 Johnson Ave, Bronx, NY 10463, Amerika Serikat</li>
+            <li className={styles.address}>
+              3247 Johnson Ave, Bronx, NY 10463, Amerika Serikat
+            </li>
             <li>
               <a href="mailto:delizioso@gmail.com">delizioso@gmail.com</a>
             </li>
