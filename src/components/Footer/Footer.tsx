@@ -8,9 +8,9 @@ export default function Footer() {
         <div className={styles.brandColumn}>
           <div className={styles.logoContainer}>
             <div className={styles.logoCircle}>D</div>
-            <h1 className={styles.brandName}>
+            <p className={styles.brandName}>
               Delizi<span className={styles.accent}>oso</span>
-            </h1>
+            </p>
           </div>
 
           <p className={styles.description}>
@@ -20,19 +20,19 @@ export default function Footer() {
 
           <div className={styles.socials}>
             <a className={styles.socialIcon} href="https://x.com/">
-              <img src="img/twitter.png" alt="twitter-logo" />
+              <img src="img/twitter.png" alt="twitter" />
             </a>
             <a className={styles.socialIcon} href="https://www.instagram.com/">
-              <img src="img/instagram.png" alt="instagram-logo" />
+              <img src="img/instagram.png" alt="instagram" />
             </a>
             <a className={styles.socialIcon} href="https://www.facebook.com/">
-              <img src="img/facebook.png" alt="facebook-logo" />
+              <img src="img/facebook.png" alt="facebook" />
             </a>
           </div>
         </div>
 
         <div className={styles.linkColumn}>
-          <p className={styles.columnTitle}>Page</p>
+          <h2 className={styles.columnTitle}>Page</h2>
           <ul className={styles.linkList}>
             <li>
               <a href="#">Home</a>
@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.linkColumn}>
-          <p className={styles.columnTitle}>Information</p>
+          <h2 className={styles.columnTitle}>Information</h2>
           <ul className={styles.linkList}>
             <li>
               <a href="#">About us</a>
@@ -68,7 +68,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.linkColumn}>
-          <p className={styles.columnTitle}>Get in touch</p>
+          <h2 className={styles.columnTitle}>Get in touch</h2>
           <ul className={styles.contactList}>
             <li className={styles.address}>
               3247 Johnson Ave, Bronx, NY 10463, Amerika Serikat
@@ -77,7 +77,7 @@ export default function Footer() {
               <a href="mailto:delizioso@gmail.com">delizioso@gmail.com</a>
             </li>
             <li>
-              <a href="tel:+123 4567 8901">+123 4567 8901</a>
+              <a href="tel:+12345678901">+123 4567 8901</a>
             </li>
           </ul>
         </div>
@@ -85,7 +85,7 @@ export default function Footer() {
 
       <div className={styles.bottomRow}>
         <p className={styles.copyright}>
-          Copyright <MdCopyright /> 2022 Delizioso
+          Copyright <MdCopyright /> 2026 Delizioso
         </p>
       </div>
     </footer>
