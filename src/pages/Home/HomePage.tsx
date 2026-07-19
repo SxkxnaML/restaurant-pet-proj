@@ -1,3 +1,4 @@
+import CustomersFeedbackSection from './CustomersFeedbackSection/CustomersFeedbackSection'
 import GreatestChefSection from './GreatestChefSection/GreatestChefSection'
 import styles from './HomePage.module.css'
 import PopularMenuSection from './PopularMenuSection/PopularMenuSection'
@@ -42,6 +43,7 @@ export default function HomePage() {
       <PopularMenuSection />
       <ReserveTableSection />
       <GreatestChefSection />
+      <CustomersFeedbackSection />
     </div>
   )
 }
